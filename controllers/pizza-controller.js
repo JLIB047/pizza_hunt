@@ -6,7 +6,7 @@ const pizzaController = {
         Pizza.find({})
             .populate({
                 path: 'comments',
-                selct: '-__v'
+                select: '-__v'
             })
             .select('-__v')
             .sort({ _id: -1 })
